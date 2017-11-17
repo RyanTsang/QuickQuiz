@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="pers.ryan.quickquiz.domain.Question" table="quickquiz_questions" lazy="false">
+		<id name="id" column="question_id">
+			<generator class="uuid"></generator>
+		</id>
+		<property name="qnNum" column="question_qnNum"></property>
+		<property name="topic" column="question_topic"></property>
+		<property name="question" column="question_question"></property>
+		<property name="ansA" column="question_ansA"></property>
+		<property name="ansB" column="question_ansB"></property>
+		<property name="ansC" column="question_ansC"></property>
+		<property name="ansD" column="question_ansD"></property>
+		<property name="correctAns" column="question_correctAns"></property>
+	</class>
+</hibernate-mapping>
